@@ -377,8 +377,27 @@ a:hover { text-decoration-thickness: 2px; }
 .enlaces li + li { margin-top: 0.5rem; }
 .enlaces a { color: var(--basalto); font-weight: 500; }
 
+/* CATÁLOGO VIVO · iNATURALIST */
+.catalogo { background: var(--tabaiba); color: #fff; padding: var(--seccion) 0; }
+.catalogo__rejilla { display: grid; gap: 2.5rem; }
+@media (min-width: 56rem) { .catalogo__rejilla { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 4rem; align-items: start; } }
+.catalogo__texto > p { max-width: var(--medida); }
+.catalogo__programa { font-family: var(--sans); font-weight: 700; color: var(--millo); font-size: 1.1rem; margin-bottom: 0.5rem; }
+.catalogo__pasos { list-style: none; counter-reset: paso; padding: 0; margin: 1.6rem 0 2rem; display: grid; gap: 1rem; max-width: var(--medida); }
+.catalogo__pasos li { counter-increment: paso; display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; align-items: start; }
+.catalogo__pasos li::before {
+  content: counter(paso); width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  display: grid; place-items: center; background: var(--millo); color: var(--basalto);
+  font-family: var(--sans); font-weight: 700; font-size: 1.1rem;
+}
+.movil { background: var(--papel); color: var(--tinta); padding: clamp(1.5rem, 3vw, 2.2rem); border-radius: 6px; font-size: 1.02rem; }
+.movil h3 { color: var(--tabaiba); font-size: 1.35rem; }
+.movil ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+.movil li + li { margin-top: 0.35rem; }
+.movil__nota { font-size: 0.92rem; color: var(--tinta-suave); border-top: 1px solid var(--linea); padding-top: 0.9rem; margin: 0; }
+
 /* MATERIALES */
-.materiales { padding: 0 0 var(--seccion); }
+.materiales { padding: var(--seccion) 0; }
 .recursos {
   list-style: none; padding: 0; margin: 2rem 0 0;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
@@ -452,7 +471,7 @@ a:hover { text-decoration-thickness: 2px; }
   .portada::after, .portada__foto, .portada__barra .boton, .portada__acciones,
   .formulario, .comparador__control, .comparador__linea, .saltar { display: none !important; }
   .portada__logo { filter: invert(1); }
-  .estratos, .reservar, .pie { background: none; color: var(--basalto); }
+  .estratos, .reservar, .pie, .catalogo { background: none; color: var(--basalto); }
   .capa { break-inside: avoid; }
   .boton, .descarga { box-shadow: none; background: none; color: var(--basalto); padding: 0; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }

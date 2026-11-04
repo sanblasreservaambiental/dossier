@@ -24,6 +24,10 @@ Activar GitHub Pages en *Settings → Pages* con la rama `main` y la carpeta ra�
 
 Todos los recursos (cuadernos, guías, concurso y galería) se enlazan a sus URL publicadas en `https://sanblasreservaambiental.org/materiales/`, sin copiar archivos de ese repositorio.
 
+## Catálogo vivo en iNaturalist
+
+La sección «Un catálogo vivo de la Reserva en iNaturalist» (web y correo) enlaza al proyecto https://www.inaturalist.org/projects/san-blas-reserva-ambiental y explica que, en ESO, Bachillerato y FP, el móvil es bienvenido durante la visita como herramienta de campo.
+
 ## Lengua
 
 Todo el texto está en español de Canarias: *ustedes* en lugar de *vosotros* y léxico de las islas (*guagua*, *destiladera*…).
